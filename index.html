@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container py-4">
+        <div class="weather-card">
+            <div class="location-header">
+                <span class="location-name">Your Location</span>
+                <span class="section-title">NEXT 7 DAYS</span>
+            </div>
+            <hr style="border-color: rgba(255, 255, 255, 0.3);">
+            
+            <div class="row">
+                <!-- Day 1 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Fri</div>
+                        <div class="precipitation">60%</div>
+                        <div class="weather-icon">🌧️</div>
+                        <div class="temp-high">25°</div>
+                        <div class="temp-low">15°</div>
+                        <div class="weather-desc">Rainy</div>
+                    </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Sat</div>
+                        <div class="precipitation"></div>
+                        <div class="weather-icon">☁️</div>
+                        <div class="temp-high">27°</div>
+                        <div class="temp-low">16°</div>
+                        <div class="weather-desc">Cloudy</div>
+                    </div>
+                </div>
+                
+                <!-- Day 3 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Sun</div>
+                        <div class="precipitation">20%</div>
+                        <div class="weather-icon">🌦️</div>
+                        <div class="temp-high">25°</div>
+                        <div class="temp-low">14°</div>
+                        <div class="weather-desc">Light Rain</div>
+                    </div>
+                </div>
+                
+                <!-- Day 4 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Mon</div>
+                        <div class="precipitation">60%</div>
+                        <div class="weather-icon">🌧️</div>
+                        <div class="temp-high">23°</div>
+                        <div class="temp-low">12°</div>
+                        <div class="weather-desc">Heavy Rain</div>
+                    </div>
+                </div>
+                
+                <!-- Day 5 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Tue</div>
+                        <div class="precipitation"></div>
+                        <div class="weather-icon">☁️</div>
+                        <div class="temp-high">25°</div>
+                        <div class="temp-low">16°</div>
+                        <div class="weather-desc">Overcast</div>
+                    </div>
+                </div>
+                
+                <!-- Day 6 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Wed</div>
+                        <div class="precipitation"></div>
+                        <div class="weather-icon">🌤️</div>
+                        <div class="temp-high">28°</div>
+                        <div class="temp-low">19°</div>
+                        <div class="weather-desc">Partly Cloudy</div>
+                    </div>
+                </div>
+                
+                <!-- Day 7 -->
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="forecast-item">
+                        <div class="day-name">Thu</div>
+                        <div class="precipitation"></div>
+                        <div class="weather-icon">☀️</div>
+                        <div class="temp-high">32°</div>
+                        <div class="temp-low">21°</div>
+                        <div class="weather-desc">Sunny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Error message area (hidden by default) -->
+        <div id="error-message" class="alert alert-danger mt-3" style="display: none;">
+            <strong>Error:</strong> <span id="error-text"></span>
+        </div>
+        
+        <!-- Loading indicator (hidden by default) -->
+        <div id="loading" class="text-center mt-3" style="display: none;">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Getting your weather forecast...</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

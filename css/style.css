@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.day-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.precipitation {
+    color: #b3d9ff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.temp-high {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.temp-low {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.weather-desc {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}

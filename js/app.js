@@ -39,7 +39,7 @@ let coordinates = { lat: null, lon: null };
 
 
 
-// Function 1: Get user's location (using your teacher's structure)
+// Function 1: Get user's location (using Mike's structure)
 const findMe = () => {
   const success = (position) => {
     console.log(position);
